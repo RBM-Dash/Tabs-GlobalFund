@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Global Fund Malaria Grants</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/assets/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition text-sm" style="width:100%; overflow:hidden; line-height: 1">
+    <div class="wrapper">
+        <!-- Content Wrapper. Contains page content -->
+        <div class="container-fluid">
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card card-primary card-tabs" style="width:100%;">
+
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between">
+
+
+
+                                <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="Global-tabs-summary-tab" data-toggle="pill"
+                                            href="#Global-tabs-summary" role="tab" aria-controls="Global-tabs-summary"
+                                            aria-selected="true">Global Fund (GF) Malaria Grants Globally</a>
+
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="vert-tabs-Country-tab" data-toggle="pill"
+                                            href="#vert-tabs-Country" role="tab" aria-controls="vert-tabs-Country"
+                                            aria-selected="false">GF Malaria Grants by Country</a>
+                                    </li>
+
+                                </ul>
+                                <a title="Overview of the GF commintments and disbursements to Malaria Grants at the Global and Country Levels. 1) Under tab GF Malaria Grants by country, use filter on top of the page to select one or mores countries; 2) Click on plus sign at the right of Definitions and Data Sources to expand; 3) On line plots you can select/deselect elements in the legend to show/hide grants or categories"
+                                    href="#" data-toggle="tooltip">Hover me</a>
+                            </div>
+                        </div>
+                        <div class="card-body" style="width:100%; padding: 0.25rem 0.15rem 0.25rem 0.15rem;">
+                            <div class="col-12 col-sm-12">
+                                <div class="tab-content" id="vert-tabs-tabContent">
+                                    <div class="tab-pane text-left fade show active" id="Global-tabs-summary"
+                                        role="tabpanel" aria-labelledby="Global-tabs-summary-tab">
+                                        <div class="card card-primary collapsed-card">
+                                            <div class="card-header">
+                                                <h6 class="card-title text-sm">Definitions and Data Sources</h6>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool"
+                                                        data-card-widget="collapse"><i class="fas fa-plus"></i>
+                                                    </button>
+
+                                                </div>
+                                                <!-- /.card-tools -->
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body" style="display: none;">
+                                                <blockquote>
+                                                    <p text-xm style="text-align: left;">The <a
+                                                            title="The Global Fund (GF)"
+                                                            href="https://www.theglobalfund.org/en/"
+                                                            target="_blank">Global Fund</a> (GF) provides 56% of all
+                                                        international financing for malaria programs (39% of total
+                                                        available resources) and has invested more than 14.7
+                                                        billion USD in malaria control programs. <span
+                                                            style="color: #808080;">Since 2020, the Global Fund has
+                                                            provided additional funding through the COVID-19 Response
+                                                            Mechanism to countries to mitigate the impact of
+                                                            COVID-19 on the malaria response.</span> GF contribution is
+                                                        particularly important for Africa, a continent which accounts
+                                                        for
+                                                        over 90% of the global malaria burden.</p>
+                                                    <p>The formula for allocating funds to country programs is based on
+                                                        each country&rsquo;s disease burden (as recommended by
+                                                        technical partners) and economic capacity (measured by GNI per
+                                                        capita). It also takes into account maximum and minimum
+                                                        shares, adjustments for other external financing, and needs for
+                                                        scale up and paced reductions. Importantly, unused funds
+                                                        remaining at the original grant end date will be returned to the
+                                                        Global Fund and used for portfolio optimization
+                                                        investments through the allocation period. It is therefore
+                                                        important to keep regular track of the proportion of unused
+                                                        funds for each grant. The scorecard at the end of this dashboard
+                                                        provides a proxy to monitor grant absorbance. It is
+                                                        defined as the ratio between cumulated disbursements over last
+                                                        two quarters and cumated budgets planned for the same
+                                                        period. To better analyze this proxy we need to take into
+                                                        account the date of the end of the grant.</p>
+                                                    <small style="color: #5e9ca0; text-align: left;"><span
+                                                            style="color: #808080;">This Dashboard summarize investments
+                                                            in
+                                                            Malaria Programs by the GF, using publicly available GF Data
+                                                            accessed trough the <a title="Global Fund Data API"
+                                                                href="https://data-service.theglobalfund.org/api"
+                                                                target="_blank">Global Fund Data API</a>.</span></small>
+                                                </blockquote>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+
+                                        <embed
+                                            src="https://www.globalmalariadashboard.com/dashboard/global_gf_dashboard"
+                                            width="100%" height="800" style="border:1px solid rgb(15, 19, 241);">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="vert-tabs-Country" role="tabpanel"
+                                        aria-labelledby="vert-tabs-Country-tab">
+                                        <div class="card card-primary collapsed-card">
+                                            <div class="card-header">
+                                                <h6 class="card-title text-sm">Definitions and Data sources</h6>
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool"
+                                                        data-card-widget="collapse">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+
+
+                                                </div>
+
+                                                <!-- /.card-tools -->
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body" style="display: none;">
+                                                <blockquote>
+                                                    <p style="text-align: left;">In this Dashboard we provide
+                                                        information on GF grants to Malaria at the country level.
+                                                        The filter box on the top allows selecting one or multiple
+                                                        countries for analysis.&nbsp;</p>
+                                                    <p style="text-align: left;">The Cumulative Budgets vs. Cumulative
+                                                        Disbursements for Active Grants Plot, is aimed to
+                                                        track potential Gaps between quarterly budgets and
+                                                        disboursements. It can be seen as a dynamic proxy for Grant
+                                                        absorbance (formally defined in terms of the expenditure) or to
+                                                        monitor unused funds per Grant. Note that unused
+                                                        funds remaining at the original grant end date will be returned
+                                                        to the Global Fund and used for portfolio
+                                                        optimization investments through the allocation period.
+                                                        Therefore, the ratio disboursements to budgets should be
+                                                        as close as possible to one particularly near the grant end
+                                                        date. Quarterly ratios are shown on the bar plot
+                                                        entitled "Cumulative Budgets vs. Cumulative Disbursements for
+                                                        Active Grants". Note that this ratio can be very
+                                                        low if the grant budgeted amount is much larger than the signed
+                                                        amount. Therefore, the table at the end of the
+                                                        Dashboard also includes the disbursements to committments ratio
+                                                        that can be used as an alternative but less
+                                                        dynamic proxy.</p>
+                                                    <p>&nbsp;</p>
+                                                    <small style="color: #5e9ca0; text-align: left;"><span
+                                                            style="color: #808080;">This Dashboard summarize investments
+                                                            in Malaria Programs by the GF for one or multiple selected
+                                                            countries, using publicly available GF Data
+                                                            accessed trough the <a title="Global Fund Data API"
+                                                                href="https://data-service.theglobalfund.org/api"
+                                                                target="_blank">Global Fund Data API</a>.</span></small>
+                                                </blockquote>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <embed src="https://www.globalmalariadashboard.com/dashboard/globalfund_grants"
+                                            width="100%" height="800" style="border:1px solid rgb(15, 19, 241);">
+
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.card -->
+
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Last Updated:</b> September, 2021
+            </div>
+
+        </footer>
+
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/assets/js/adminlte.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
